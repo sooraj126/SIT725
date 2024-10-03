@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import materialize.css -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+     
+      html {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+      }
+      .content {
+        flex: 1 0 auto;
+      }
+      .footer {
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+
+  <body style="background-color: rgb(209, 220, 242);">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+<script src="js/script.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <nav style="background-color: rgb(53, 53, 142);">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">
+          <i class="material-icons">computer</i>SIT725
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        </ul>
+      </div>
+    </nav>
+        
+    <div class="content">
+      <h1>Calculator</h1>
+      <div class="row">
+        <div class="input-field col s4">
+          <input id="num1" type="number" min="0" max="99" class="validate">
+          <label for="num1">Number 1</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="num2" type="number" min="0" max="99" class="validate">
+          <label for="num2">Number 2</label>
+        </div>
+      </div>
+      <div>
+        <a class="waves-effect waves-light btn" id="addButton">Add</a>
+        <a class="waves-effect waves-light btn" id="subtractButton">Subtract</a>
+        <a class="waves-effect waves-light btn" id="multiplyButton">Multiply</a>
+        <a class="waves-effect waves-light btn" id="divideButton">Divide</a>
+        <a class="waves-effect waves-light btn" id="clearButton">Clear</a>
+      </div>
+      <h2 id="result">Result: </h2>
+    </div>
+    
+    <div class="container">
+      <h2 class="center-align teal-text text-darken-2">History</h2>
+      <div id="history" class="section"></div>
+  </div>
+
+    <!-- Footer Section -->
+    <footer class="page-footer" style="background-color: black;">
+      <div class="footer-copyright">
+        <div class="container">
+          ADD A DATABASE
+          <a class="grey-text text-lighten-4 right" href="#!">TASK 4.2 P</a>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+
+</html>
